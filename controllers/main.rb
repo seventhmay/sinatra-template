@@ -11,7 +11,7 @@ end
 get '/omikuji.json' do
   arr = ['大吉', '中吉', '小吉', 'マジキチ', '凶']
   @mes = {
-    :result => arr.choice,
+    :result => arr.sample,
     :time => Time.now.to_s
   }.to_json
 end
